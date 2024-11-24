@@ -2,9 +2,11 @@
 """
 Complex types - mixed list
 """
-from typing import List
+from typing import List, Union
 
 
-def sum_mixed_list(mxd_lst: List[int]) -> float:
-    """Returns the float sum of list of integers"""
+def sum_mixed_list(mxd_lst: List[Union[int, float]]) -> float:
+    """
+    Returns the sum of a list containing integers and floats.
+    """
     return sum(mxd_lst)
